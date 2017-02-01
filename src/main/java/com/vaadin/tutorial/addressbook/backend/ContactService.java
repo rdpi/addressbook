@@ -41,9 +41,9 @@ public class ContactService {
                 contact.setEmail(contact.getFirstName().toLowerCase() + "@"
                         + contact.getLastName().toLowerCase() + ".com");
                 contact.setTask("task "+ (1+r.nextInt(5)) + "." + (1+r.nextInt(5)) + "." + (1+r.nextInt(5)));
-                cal.set(2016, r.nextInt(11), r.nextInt(28));
+                cal.set(2017, 1, r.nextInt(28));
                 contact.setStartDate(cal.getTime());
-                cal.set(2016, r.nextInt(11),  r.nextInt(28));
+                cal.set(2017, r.nextInt(11),  r.nextInt(28));
                 contact.setEndDate(cal.getTime());
                 contactService.save(contact);
             }
