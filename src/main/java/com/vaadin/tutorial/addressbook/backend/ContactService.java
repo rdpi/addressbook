@@ -40,14 +40,10 @@ public class ContactService {
                 contact.setLastName(lnames[r.nextInt(fnames.length)]);
                 contact.setEmail(contact.getFirstName().toLowerCase() + "@"
                         + contact.getLastName().toLowerCase() + ".com");
-                contact.setTask("Task"+ i );
-                cal.set(1930 + r.nextInt(70),
-                        r.nextInt(11), r.nextInt(28));
+                contact.setTask("task "+ (1+r.nextInt(5)) + "." + (1+r.nextInt(5)) + "." + (1+r.nextInt(5)));
+                cal.set(2016, r.nextInt(11), r.nextInt(28));
                 contact.setStartDate(cal.getTime());
-                cal.set(1930 + r.nextInt(70),
-                        r.nextInt(11), r.nextInt(28));
- 
-                contact.setStartDate(cal.getTime());
+                cal.set(2016, r.nextInt(11),  r.nextInt(28));
                 contact.setEndDate(cal.getTime());
                 contactService.save(contact);
             }
