@@ -5,7 +5,9 @@ jdk:
 - oraclejdk8
 deploy:
   provider: heroku
-  api_key: da7c1366-c3ec-4c5b-84ed-255ab772a47b
+  api_key:
+    secure: vjFuBwXyvRdQIQws2Uxa+tdE1T4Tf/luZSurLUjz5IeAhL3u6o4YQRFXZCGXpuRqdZkmDjL+FpfmQuQCdPk3r3o3jraPS/xK6eMZFM55++wZ9EOPGsyR0iKqmJUC8urpEtdIgy3tPQ+HAp1YNcaTCokp6KoKFvx3ZqCDY7FSA9qv9icaKiMB8kNeMCYZeMvxLcX7ay2dNI2nRP9oqFCZlG3FLnY/RSw++Gg2J5RVwvGtYpzhP7u24fsZ7TcyURdyMJ4bo8ZPJzl6eeOI5aX4+NHpTgStfQsFT2xOpdLSsp2N6KV/guI1UU1i+f1Se8Mp/v+a2/xgjT0wzE6XEdjkE55eqKj5lr1R4rqcyDYb3pDBTpwmtfPnu5u5DmVuzR02EX3aROrcvCTETFjqbC/oGn2VC6P2q06imG1ugZpdd782vRIUlCVbeP34cAtJH8PB9+OpUH1nAX2dQLLQ3ns95tCYvwby3KZRBnWumRWZAqeVw0GIJ+8p43RgybBL3UofP6vHra0NQvkAwwu2zKZNFO9iUdEkbKY5fvnJWwFpcKUwQNn0ivmMWiTHMP/wzeYzO+CyX6Enwm5qNLiyUN2LZiaGsBUZsE1TiGaRD8Q1aNjyGz9S8+DJkNiCN9x+kqRQHUTiJzk5239NvdHExgJDj28OvVg7N+p2ELmj1z0ELLA=
   app: addressbook
   on:
+    repo: rdpi/addressbook
     branch: todo_tasks
